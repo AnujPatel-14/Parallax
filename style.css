@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: #e3e3e3;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    color: #3d7069;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 270px;
+
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #003329;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    transition: 0.3s;
+    
+}
+
+.navigation a:hover{
+    background-color: #3d7069;
+    color: #fff;
+}
+
+.navigation a.active{
+    background-color: #3d7069;
+    color: #fff;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.parallax-text{
+    position: absolute;
+    font-size: 5em;
+    color: #000;
+    background-image: url(./Images/textLeaf.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sec{
+    position: relative;
+    padding: 100px;
+    background-color: #003329;
+    margin-top: 100px;
+                
+}
+
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.sec p{
+    color: #fff;
+    font-size: 1em;
+}
